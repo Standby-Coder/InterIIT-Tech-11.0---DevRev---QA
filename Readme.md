@@ -92,7 +92,7 @@ Final Score
 
 We started off with researching about the task at hand, we found that the Stanford Question Answering Dataset (SQuADv2) dataset is widely used as a benchmark for Question-Answering tasks and is quite similar to the given data. We found a research paper that had a high F1 score on SQuADv2, Retrospective Reader for Machine Reading Comprehension (Zhang et al. 2021). We implemented the method and had promising results on the given training dataset with an F1 score of around 0.89 using ELECTRA as the backbone. Retro Reader works well because it imitates the human way of text comprehension, by roughly looking for answers in the given passage and then actually finding out the answer. The issue with this method was it was very hardware intensive requiring 4 hours to train on Colab Notebook.
 
-<img  src="https://d3i71xaburhd42.cloudfront.net/8d00049c345b9c8cc76ea2ea2565f8bb69f6b683/2-Figure1-1.png">
+<img  src="https://media.arxiv-vanity.com/render-output/6106993/x1.png">
 
 - **Classical ML methods with lower computational budget training**
 

@@ -111,6 +111,7 @@ As we can see RoBERTa tiny model has a very good para and qa score because of it
 Initially when we planned to train our own model, we split the dataset provided to us to perform validation. As one of the evaluation tasks (Task 1) was going to test our model to generalise to unseen themes we figured a good way to set up data splits would be using Group K-Fold. In this method, the data is divided in such a way that always a certain class of the target variable is unavailable in the training set. This is done to validate the generalisability of the model. When we realised we couldn’t train our own model, we reused the splits to evaluate the pre-trained models to get the best one.
 <img  src="https://amueller.github.io/aml/_images/kfold_cv.png">
 ## Our Final Model
+{image of final model}
 
 # Optimizations
 

@@ -102,7 +102,8 @@ We moved on to using Bi-directional LSTMs taking inspiration from a master’s p
 
 Our current method is to use a **model pretrained on the SQuADv2 dataset**. This dataset is very similar to the given training set, in that it has questions which have to be answered given a context. Considering that we have **significantly lesser data** than in SQuADv2 and the **hardware constraints**, we decided not to fine-tune the pretrained model on our dataset. On evaluating 8 backbones trained on SQuADv2 **using the metric that we will be judged on** we decided to use tiny- RoBERTa as the final model to be used. We found that larger models had a **much larger inference time** and although had better F1 scores their average inference times offset their final metric score so that they would perform worse. This is why we only tested light weight models for inference of the test set. We created the test set using **Group K-Fold** method which is further explained in the next section. Our experimental results using the 8 backbones were as follows: -
 
-{image from mid term report}
+{https://drive.google.com/file/d/1m7dr9ZjhAUDExziFGsIJHSKxZQXILQyy/view?usp=share_link}
+
 
 As we can see RoBERTa tiny model has a very good para and qa score because of its quick inference time. RoBERTa was originally trained for being more robust than BERT and the tiny model refers to a smaller version of the original model.
 
@@ -111,7 +112,7 @@ As we can see RoBERTa tiny model has a very good para and qa score because of it
 Initially when we planned to train our own model, we split the dataset provided to us to perform validation. As one of the evaluation tasks (Task 1) was going to test our model to generalise to unseen themes we figured a good way to set up data splits would be using Group K-Fold. In this method, the data is divided in such a way that always a certain class of the target variable is unavailable in the training set. This is done to validate the generalisability of the model. When we realised we couldn’t train our own model, we reused the splits to evaluate the pre-trained models to get the best one.
 <img  src="https://amueller.github.io/aml/_images/kfold_cv.png">
 ## Our Final Model
-{image of final model}
+{https://drive.google.com/file/d/1c86wFokZpiLEA4_aHejpoV6lytVbn36z/view?usp=share_link}
 
 # Optimizations
 
